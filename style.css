@@ -89,7 +89,16 @@ body {
     text-align: center;
     padding: 8px;
     border-radius: 30px;
+    border: solid #A335F0 1px;
 
+}
+
+.categories p:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid #A335F0 1px;
 }
 
 .recommended {
@@ -112,6 +121,22 @@ body {
     left: 90px;
     padding: 2%;
     border: solid black 3px;
+    animation-name: zoom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
 }
 
 .recommended__container {
